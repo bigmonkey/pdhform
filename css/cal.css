@@ -1,0 +1,80 @@
+.main_cal {position:absolute;
+	margin-left:100px;
+	top:auto;
+	left:auto;
+	width:175px;
+	padding:10px;
+	margin-top:5px;
+	background:#ffffff;
+	border:solid #666666 1px;}
+
+.cal_table{background-color:#d8d8d8;
+	font-family:Tahoma, Arial;
+	font-size:8pt;
+	width:100%;}
+	
+.day_head {font-weight:400;
+	font-family:Tahoma, Arial;
+	font-size:8pt;
+	text-align:center;
+	background-color:#ffffff;}
+
+.cal_norm {font-weight:400;
+	font-family:Tahoma, Arial;
+	font-size:8pt;
+	text-align:center;
+	background-color:#ffffff;}
+	
+.passed_day{font-weight:400;
+	font-family:Tahoma, Arial;
+	font-size:8pt;
+	text-align:center;
+	background-color:#ffffff;
+	color:#999999;
+	text-decoration:line-through;}
+
+.day_link{font-family:Tahoma, Arial;
+	font-size:8pt;
+	text-decoration:none;
+	color:#000000;
+	cursor:pointer;
+	background-color:#ffffff;
+	text-align:center;
+	font-weight:bold;}
+.selected_day {font-family:Tahoma, Arial;
+	font-size:8pt;
+	text-decoration:none;
+	color:#000000;
+	cursor:pointer;
+	background-color:#ffcd07;
+	text-align:center;
+	font-weight:bold;}
+	
+.monthDis {border:solid #666666 1px;
+	padding:3px;
+	text-align:center;}
+	
+.nextTD{border:solid #666666 1px;
+	padding:3px;
+	text-align:center;
+	background:url(../img/next_arrow.gif) no-repeat center center;
+	cursor:pointer;}
+	
+.preTD{border:solid #666666 1px;
+	padding:3px;
+	text-align:center;
+	background: url(../img/pre_arrow.gif) no-repeat center center;
+	cursor:pointer;}
+	
+.nextTD_blank{border:solid #666666 1px;
+	padding:3px;}
+	
+.preTD_blank{border:solid #666666 1px;
+	padding:3px;}
+	
+.closeTD {padding:3px;
+	text-align:center;
+	color:#666666;
+	text-decoration:underline;
+	background:#ffffff;
+	cursor:pointer;}
