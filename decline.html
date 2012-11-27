@@ -1,9 +1,10 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html><!-- HTML 5 -->
 <html>
 <head>
 <meta charset="UTF-8">
 <title>The Payday Hound Payday Loan Matching Service</title>
 <meta name="description" content="Connect to a network of over 100 payday loan lenders with just one simple application. Apply now with our easy and convenient payday loan matching service."/>
+	<meta name="robots" content="noindex, nofollow"/>	
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />  
     <link href="css/cal.css" rel="stylesheet" type="text/css" /> 
     <script type="text/javascript" src="js/Validation.js"></script>
@@ -12,6 +13,24 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
+<script src="http://resources.thepaydayhound.com/assets/application-06be595d05e3f33bea7653e0151dbe04.js" type="text/javascript"></script>
+
+<!-- --------- Google Analytics subdomain -----------  -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29737687-1']);
+  _gaq.push(['_setDomainName', 'thepaydayhound.com']);
+  _gaq.push(['_trackPageview']);	
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();	
+</script>	
+
+<!-- --------- Google Analytics subdomain -----------  -->
+
 </head>
 <body  onLoad="start_cal();init();">
 
@@ -28,13 +47,41 @@
 			<a href="http://www.twitter.com/thepaydayhound" title="The Payday Hound Twitter Page" target="_blank"><img alt="Twitter" src="img/twitter.png" /></a>
 			<a href="https://plus.google.com/114318301384219988110" title="The Payday Hound Google Page" target="_blank"><img alt="Google +" src="img/googleplus.png" /></a>
 		</div>
+		
 		<nav>
-			<ul>
-				<li><a href="http://www.thepaydayhound.com/" target="_blank">Home</a></li>
-				<li><a href="http://www.thepaydayhound.com/payday-loans" target="_blank">Payday Loans</a></li>
-				<li><a href="http://www.thepaydayhound.com/resources" target="_blank">Resources</a></li>
-			</ul>			
+			<div class = "chromestye" id = "chromemenu">
+				<ul>
+					<li><a href="http://www.thepaydayhound.com">Home</a></li>
+					<li><a href="http://tools.thepaydayhound.com/secured-cards" rel="dropmenu1">Cards</a></li>
+				    	<li><a href="http://tools.thepaydayhound.com/payday-loans" rel="dropmenu2">Loans</a></li>
+					<li><a href="http://www.thepaydayhound.com/resources" >Resources</a></li>
+				</ul>	
+			</div>	
+
+
+			<!--credit card drop down menu -->                                                   
+			<div id="dropmenu1" class="dropmenudiv">
+			<a href="http://tools.thepaydayhound.com/prepaids">Prepaid Cards</a>	
+			<a href="http://tools.thepaydayhound.com/secured-cards">Secured Cards</a>
+			</div>
+
+			<!--payday loan drop down menu -->                                                   
+			<div id="dropmenu2" class="dropmenudiv">
+			<a href="http://payday-loan-apply.thepaydayhound.com">Apply Now</a>
+			<a href="http://tools.thepaydayhound.com/payday-loans">Payday Loans</a>	
+			<a href="http://tools.thepaydayhound.com/installment-loans">Installment Loans</a>
+			</div>
+
+
+			<script type="text/javascript">
+
+			cssdropdown.startchrome("chromemenu")
+
+			</script>
+
+
 		</nav>
+
 	</header>
 </div>
     
@@ -50,15 +97,9 @@
 		<ul>
 		<li><a href="../how-this-works.html" onClick="window.open('how-this-works.html','','scrollbars=yes,width=500,height=350'); return false;">How This Works</a></li>
 		<li><a href="../faq.html" onClick="window.open('faq.html','','scrollbars=yes,width=500,height=500'); return false;">FAQ</a></li>
-		</ul>
-</div>
-
-<div id = "sidebarWhyPDH">
-	<h2>The Payday Hound</h2>
-		<ul>
-		<li><a href="http://www.thepaydayhound.com/why-use-the-payday-hound/" target="_blank">Why Use Us</a></li>
-		<li><a href="http://www.thepaydayhound.com/why-use-the-payday-hound/" target="_blank">How We Make Money</a></li>
-		<li><a href="http://www.thepaydayhound.com/why-use-the-payday-hound/" target="_blank">How Our Rankings Work</a></li>
+		<li><a href="http://tools.thepaydayhound.com/why-use-the-payday-hound/" target="_blank">Why Use Us</a></li>
+		<li><a href="http://tools.thepaydayhound.com/why-use-the-payday-hound/" target="_blank">How We Make Money</a></li>
+		<li><a href="http://tools.thepaydayhound.com/why-use-the-payday-hound/" target="_blank">How Our Rankings Work</a></li>
 		</ul>
 </div>
 
@@ -67,14 +108,15 @@
 <div id="content">
 
 	<h1>Declined</h1>
-    	<p>Your application was received and processed.</p>
-    	<p>Unfortunately, you were not approved by any of our lenders.</p>
-    	<p>We are sorry we were unable to find your a loan. Best of luck.</p>
+    	<p>Your application was received and processed. We are so sorry but you were not approved by any of our lenders.</p>
+    	<p>We suggest you try <a href="http://www.kqzyfj.com/click-5697712-10945301" target="_top">the Prosper lending network</a> to see if they can help you</p>
+        </br>
+
+    	<a href="http://www.kqzyfj.com/click-5697712-10945301" target="_top">
+<img src="http://www.lduhtrp.net/image-5697712-10945301" width="120" height="60" alt="" border="0"/></a>
 </br>
 </br>
 </br>
-</br>
-<p class="msDisclaimer">The Payday Hound is NOT A LENDER. We are a free, no obligation financial marketing service, matching prospective borrowers with prospective lenders for short-term loans. We are not a financial institution or a lender and cannot guarantee final approval of your loan. Not all independent loan companies will approve a loan up to $1,000. Qualifying for final approval of a cash loan depends on many factors including, but not limited to income levels, the state in which you reside and employment status. The independent loan companies may verify your supplied information with any number of independent verification companies including but not limited to: CLVerify, Teletrack, or Accurint. By entering your SSN into the website, you consent to allow us to share your SSN with outside service providers for evaluation of your application and provision of loan services. By clicking the submit button you certify that you are at least 18 years old, a legal resident of the United States and agree to the privacy policy. Residents of Georgia, Virginia, West Virginia, Arizona, Pennsylvania, and Ohio are not eligible to apply for a cash advance on this web site.</p>	
 
 </div>
 
@@ -83,12 +125,12 @@
 
 <footer>		
 	<ul>
-	<li><a href="http://www.thepaydayhound.com/about-the-payday-hound/" target="_blank">About Us</a> | </li>
-	<li><a href="http://www.thepaydayhound.com/contact-the-payday-hound/" target="_blank">Contact Us</a> | </li>
-	<li><a href="http://www.thepaydayhound.com/jobs/" target="_blank">Jobs</a> | </li>
-	<li><a href="http://www.thepaydayhound.com/press/" target="_blank">Press</a> | </li>    			    
-	<li><a href="http://www.thepaydayhound.com/privacy-policy/" target="_blank">Privacy Policy</a> | </li>    
-	<li><a href="http://www.thepaydayhound.com/terms-of-use/" target="_blank">Terms of Use</a></li> 	    
+	<li><a href="http://tools.thepaydayhound.com/about-the-payday-hound/" target="_blank">About Us</a> | </li>
+	<li><a href="http://tools.thepaydayhound.com/contact-the-payday-hound/" target="_blank">Contact Us</a> | </li>
+	<li><a href="http://tools.thepaydayhound.com/jobs/" target="_blank">Jobs</a> | </li>
+	<li><a href="http://tools.thepaydayhound.com/press/" target="_blank">Press</a> | </li>    			    
+	<li><a href="http://tools.thepaydayhound.com/privacy-policy/" target="_blank">Privacy Policy</a> | </li>    
+	<li><a href="http://tools.thepaydayhound.com/terms-of-use/" target="_blank">Terms of Use</a></li> 	    
 	</ul>
 	
 	<div id="copyright">Copyright © 2012 The Payday Hound. All rights reserved.</div>

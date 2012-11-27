@@ -263,10 +263,10 @@ else // lead not approved
 	//echo "application declined<br>\nresponse from server below:<br>\n" . $result_data['server_data'] . "\n"; 
 	
 	//template to use for declines
-	//include('decline.html');
+	include('decline.html');
 	
 	//or do redirect via:
-	header('Location: http://www.hippocred.com/');
+	//header('Location: http://www.yourdomain.com/form/decline.html');
 }
 
 ?>

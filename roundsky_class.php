@@ -28,13 +28,13 @@ class leadhorizon
 		return $this->payday_post_parse($this->post_leadhorizon($query, POST_URL));
 	}
 
-	function post_leadhorizon($query, $url)
-	{
-		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL,            $url);
-
-		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, MAXIMUM_TIME);
-		curl_setopt($ch, CURLOPT_TIMEOUT,        MAXIMUM_TIME);
+    function post_leadhorizon($query, $url)
+    {
+        $ch = curl_init();
+		mail('conway@thepaydayhound.com', 'Lead Query for RoundSky', $query . ' and ' . $url);
+        curl_setopt($ch, CURLOPT_URL,            $url);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, MAXIMUM_TIME);
+ 		curl_setopt($ch, CURLOPT_TIMEOUT,        MAXIMUM_TIME);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_HEADER,         0);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);

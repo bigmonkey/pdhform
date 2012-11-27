@@ -8,7 +8,7 @@ define('PARTNER_DOMAIN', 'thepaydayhound.com');
 
 //sub_id, used to a sub source, like affiliate id, or name of this site, etc.
 //that way if one sub source is not working out, we can pull just that one source and not the whole account.
-define('SUB_ID', '');
+define('SUB_ID', 'pdh');
 
 //do you want Round Sky to list manage the leads so you earn extra revenue?
 //talk with Round Sky first.

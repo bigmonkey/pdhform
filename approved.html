@@ -3,21 +3,62 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Redirecting to Loan Terms & Conditions..</title>
+<meta name="robots" content="noindex, nofollow"/>	
+
+<style type="text/css">
+#contentMain {
+	width: 780px;
+    font-family: helvetica, arial, san-serif;
+    color: #666;
+    margin: 100px auto;
+    text-align: center;
+}
+
+h1 {
+	color: #0E8B4D;
+	font-size: 1.5em;
+}
+</style>
+
 <script language="JavaScript">
 
 function redirectlender()
 {
-window.setTimeout("window.location.replace('<?= $redirect_url ?>')",2000);
+window.setTimeout("window.location.replace('<?= $redirect_url ?>')",3000);
 }
 
 </script>
+
+
+<!-- --------- Google Analytics subdomain -----------  -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29737687-1']);
+  _gaq.push(['_setDomainName', 'thepaydayhound.com']);
+  _gaq.push(['_trackPageview']);    
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();     
+</script>   
+
 </head>
+<!-- --------- Google Analytics subdomain -----------  -->
+</head>		
 
-<body onload="javascript: redirectlender();">
-Redirecting to lender...<br>
-If this page does not load <a href="<?= $redirect_url ?>">please click here</a>.
+		<div id = "contentMain">
+			<body onload="javascript: redirectlender();">
+			<img src="img/loading.gif" width="32" height="32" alt="Loading" /></br>	
+			<h1>APPROVED!</h1>
+			<p>Congratulations! Please wait while you are sent to your Lender's website and your loan agreement...</p>
+			If this page does not load in five seconds <a href="<?= $redirect_url ?>">please click here</a>.
+			<p>
+			<a href="http://www.thepaydayhound.com" target="_blank"><img src="img/thepaydayhound-logo-transparent.png" width="150" height="81" alt="www.thepaydayhound.com" /></a>
+			</p>
+			<!-- --------- add any pixel firing of your choice below-----------  -->
+		</div>
 
-<!-- --------- add any pixel firing of your choice below-----------  -->
 
 </body>
 </html>

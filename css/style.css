@@ -106,31 +106,87 @@ p {
 }
 
 nav {
-	clear: right;
-	float: right;
-	font-size: 0.8em;
-	font-weight: bold;
+    clear: right;
+    float: right;
+    font-size: 0.8em;
+    font-weight: bold;
 }
- 
- 	nav ul, nav ul li {
-		list-style-type:none;
-		padding: 15px 0px 0px 25px;
-    	text-transform: uppercase;
-	} 
-	
-	nav ul li {
-	display: inline;
-	}
-
-	nav a, nav a:link, nav a:visited {
-	color: #0e8b4d;
-	}
-	
-	nav a:hover, nav a:active {
-	color: #fba117;
-	text-decoration: none;
-	}
-
+nav ul, nav ul li {
+    list-style-type: none;
+    padding: 15px 0 0 25px;
+    text-transform: uppercase;
+}
+nav ul li {
+    display: inline;
+}
+nav a, nav a:link, nav a:visited {
+    color: #0E8B4D;
+}
+nav a:hover, nav a:active {
+    color: #E58D1F;
+    text-decoration: none;
+}
+.chromestyle {
+    font-weight: bold;
+    width: 99%;
+}
+.chromestyle:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.chromestyle ul {
+    border: 1px solid #BBBBBB;
+    margin: 0;
+    padding: 4px 0;
+    text-align: center;
+    width: 100%;
+}
+.chromestyle ul li {
+    display: inline;
+}
+.chromestyle ul li a {
+    border-right: 1px solid #DADADA;
+    color: #494949;
+    margin: 0;
+    padding: 4px 7px;
+    text-decoration: none;
+}
+.dropmenudiv {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F0F0F0;
+    border-color: #F0F0F0;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    font: 12px/18px Verdana;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 130px;
+    z-index: 100;
+}
+.dropmenudiv a {
+    border-bottom: 1px solid #F0F0F0;
+    color: black;
+    display: block;
+    font-weight: normal;
+    padding: 2px 0;
+    text-decoration: none;
+    text-indent: 3px;
+    width: auto;
+}
+* html .dropmenudiv a {
+    width: 100%;
+}
+.dropmenudiv a:hover {
+    background-color: #F0F0F0;
+}
 /*SIDEBAR*/
 
 #sidebar {
