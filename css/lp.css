@@ -1,0 +1,191 @@
+.lpBody{
+	background-color: #666666;
+}
+
+
+#lpWrapper {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+#lpContainer {
+	margin:0 auto;
+	padding: 0px 30px;
+	width: 900px;
+	background-color: #ffffff;
+}
+.topBanner {
+	margin-top: 0px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #fff;
+	padding: 5px 0px 0px;
+	border-radius: 3px;
+  background-image: url('../img/lp/lp-topbannner.png');
+  background-repeat: no-repeat;
+  height: 40px;
+  text-shadow: 0 -1px #0e8b4d;
+}
+
+.topBox {
+	height: 150px;
+	background: url('../img/lp/lp-topbox.png') no-repeat left;
+  background-repeat: no-repeat;
+}
+
+.topBoxLeft {
+	width: 45%;
+	padding: 10px 0px 0px 20px;
+	float: left;
+}
+
+.topBoxLeft h1 {
+	font-size: 1.45em;
+	color: #cc6600;
+	letter-spacing: -1px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.topBoxLeft h2 {
+	font-size: .9em;
+	font-weight: bold;
+	color: #003366;
+	margin-bottom: 5px;
+}
+
+.topBoxLeft ul, .topBoxLeft ul li {
+	margin: 5px 0px 6px 10px;
+	font-size: 0.95em;
+	color: #444;
+}
+
+.topBoxLeft ul li {
+	padding-left: 0px;
+}
+
+.topBoxMiddle {
+	width: ;
+	float: left;
+	padding: 25px 0px;
+	border: 0px solid #fff;
+}
+
+.topBoxRight {
+	width: ;
+	float: left;
+	padding: 25px 0px 0px 20px;
+	border: 0px solid #fff;
+}
+.topBoxRight ul li, .topBoxMiddle ul li{
+	list-style-type: none;
+	background: url('../img/lp/check-mark.png') no-repeat left;
+	font-size: 1em;
+	color: #006633;
+	font-weight: bold;
+	line-height: 1.8em
+}
+
+/*Content*/
+	
+#lpContent {
+	width: 730px;
+	float: left;
+	margin: 15px 0px 30px 0px;
+	font-size: 0.8em;
+	line-height: 1.4em;
+	padding: 0px;
+}
+
+#lpContent h1 {
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #006633;
+}
+
+#lpContent h2 {
+	font-size: 1em;
+	color: #cc6633;
+	margin-top: 15px;
+}
+
+#lpContent h3 {
+	font-size: 1.2em;
+	color: #444;
+	margin-top: 20px;
+}
+
+#lpContent h4 {
+	font-size: 1.2em;
+	color: #444;
+  font-style: none;
+}
+
+#lpContent ul li, #lpContent ol li {
+  margin-left: 40px;
+}
+
+#lpContent p{
+	margin-top: 10px;
+}
+
+/*SIDEBAR*/
+
+#lpSidebar {
+    background-color: #fff;
+    width: 150px;
+    float: left;
+    margin: 15px 15px 30px 0px; 
+}
+
+#lpSidebarWhyPDH h2 {
+    color: #555;
+    font-size: 0.95em;
+    padding: 0px 0px 4px;
+		font-weight: bold;
+}
+
+#lpSidebar ul, #lpSidebar ul li ul {
+    background: #eee;
+    vertical-align: middle;
+    padding: 10px 10px;
+    list-style: none outside none;
+    font-size: 0.7em;
+}
+
+#lpSidebar ul, ol {
+    background: #fff;
+    vertical-align: middle;
+	padding: 0px 10px;
+	margin-bottom: 5px;
+}
+
+#lpSidebar ul li {
+	margin-bottom: 5px;
+	font-size: 1em;
+    font-weight: none;
+    list-style: circle inside none;
+}
+
+
+#lpSidebar a, #lpSidebar a:link, #lpSidebar a:visited {
+   color: #444;
+}
+
+#lpSidebar a:hover, #lpSidebar a:active {
+   color: #fba117;
+}
+
+/*footer*/
+.lpFooter {
+	clear: both;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	font-size: 0.7em;
+	padding: 20px 0px;
+	height: 110px;
+	margin: 5 auto;
+	width: 900px;
+	}
+	
