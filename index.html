@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html><!-- HTML 5 -->
 <html>
 <head>
 <meta charset="UTF-8">
@@ -12,6 +12,24 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
+<script type="text/javascript" src="http://resources.thepaydayhound.com/assets/application-8abdf3cddf5f47e707ce5441f7be3edc.js"></script>
+
+<!-- --------- Google Analytics subdomain -----------  -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29737687-1']);
+  _gaq.push(['_setDomainName', 'thepaydayhound.com']);
+  _gaq.push(['_trackPageview']);    
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();     
+</script>   
+
+<!-- --------- Google Analytics subdomain -----------  -->
+
 </head>
 <body  onLoad="start_cal();init();">
 
@@ -28,15 +46,41 @@
 			<a href="http://www.twitter.com/thepaydayhound" title="The Payday Hound Twitter Page" target="_blank"><img alt="Twitter" src="img/twitter.png" /></a>
 			<a href="https://plus.google.com/114318301384219988110" title="The Payday Hound Google Page" target="_blank"><img alt="Google +" src="img/googleplus.png" /></a>
 		</div>
+		
 		<nav>
-			<ul>
-				<li><a href="http://www.thepaydayhound.com/" target="_blank">Home</a></li>
-				<li><a href="http://www.thepaydayhound.com/payday-loans" target="_blank">Payday Loans</a></li>
-                        <li><a href="http://www.thepaydayhound.com/installment-loans" target="_blank">Installment Loans</a></li>
-                        <li><a href="https://www.thepaydayhound.com/payday-loan-apply" target="_blank">Apply now</a></li>
-				<li><a href="http://www.thepaydayhound.com/resources" target="_blank">Resources</a></li>
-			</ul>			
+			<div class = "chromestye" id = "chromemenu">
+				<ul>
+					<li><a href="http://www.thepaydayhound.com">Home</a></li>
+					<li><a href="http://tools.thepaydayhound.com/secured-cards" rel="dropmenu1">Cards</a></li>
+				    	<li><a href="http://tools.thepaydayhound.com/payday-loans" rel="dropmenu2">Loans</a></li>
+					<li><a href="http://www.thepaydayhound.com/resources" >Resources</a></li>
+				</ul>	
+			</div>	
+
+
+			<!--credit card drop down menu -->                                                   
+			<div id="dropmenu1" class="dropmenudiv">
+			<a href="http://tools.thepaydayhound.com/prepaids">Prepaid Cards</a>	
+			<a href="http://tools.thepaydayhound.com/secured-cards">Secured Cards</a>
+			</div>
+
+			<!--payday loan drop down menu -->                                                   
+			<div id="dropmenu2" class="dropmenudiv">
+			<a href="https://www.thepaydayhound.com/payday-loan-apply">Apply Now</a>
+			<a href="http://tools.thepaydayhound.com/payday-loans">Payday Loans</a>	
+			<a href="http://tools.thepaydayhound.com/installment-loans">Installment Loans</a>
+			</div>
+
+
+			<script type="text/javascript">
+
+			cssdropdown.startchrome("chromemenu")
+
+			</script>
+
+
 		</nav>
+
 	</header>
 </div>
     
@@ -52,13 +96,13 @@
 		<ul>
 		<li><a href="../how-this-works.html" onClick="window.open('how-this-works.html','','scrollbars=yes,width=500,height=350'); return false;">How This Works</a></li>
 		<li><a href="../faq.html" onClick="window.open('faq.html','','scrollbars=yes,width=500,height=500'); return false;">FAQ</a></li>
-            <li><a href="http://www.thepaydayhound.com/why-use-the-payday-hound/">Why Use Us</a></li>
-            <li><a href="http://www.thepaydayhound.com/why-use-the-payday-hound/">How We Make Money</a></li>
-            <li><a href="http://www.thepaydayhound.com/why-use-the-payday-hound/">How Our Rankings Work</a></li>            
+            <li><a href="http://tools.thepaydayhound.com/why-use-the-payday-hound/">Why Use Us</a></li>
+            <li><a href="http://tools.thepaydayhound.com/why-use-the-payday-hound/">How We Make Money</a></li>
+            <li><a href="http://tools.thepaydayhound.com/why-use-the-payday-hound/">How Our Rankings Work</a></li>            
 		</ul>
 </div>
-<div>
 
+<div>
 <img alt="Twitter" src="img/SSL_Seal.gif" style="margin: 40px 15px"/>
 </div>
 
@@ -86,21 +130,21 @@
 					<p class="applicationLine">
 						<span class="w180 m-r-15">
 							<label>First Name</label>
-							<input type='text' maxlength=32 id="first_name" name="first_name" chkType="alpha" chkTitle="First Name"  chkRequired=true />
+							<input type='text' maxlength=32 id="first_name" name="first_name" chkType="alpha" chkTitle="First Name"  chkRequired=true tabindex ="1"/>
 						</span>
                         <span class="w180 m-r-15">
 							<label>Last Name</label>
-							<input type='text' maxlength=32 id="last_name" name="last_name" chkType="alpha" chkTitle="Last Name"  chkRequired=true />
+							<input type='text' maxlength=32 id="last_name" name="last_name" chkType="alpha" chkTitle="Last Name"  chkRequired=true tabindex ="2"/>
 						</span>
                         
                         <span class="w180 m-r-15">
 							<label>Email</label>
-							<input name="email" size="20" maxlength="70" id="email" value="" type="text" chkTitle="Email" chkRequired="true" chkMinLength="5" chkType="email" />
+							<input name="email" size="20" maxlength="70" id="email" value="" type="text" chkTitle="Email" chkRequired="true" chkMinLength="5" chkType="email" tabindex ="3"/>
 						</span>
                         
                         <span class="w115">
 							<label>Own or Rent</label>
-							<select class="w-115" name="housing" id="housing">
+							<select class="w-115" name="housing" id="housing" tabindex ="4">
      <option value="rent" selected="selected">Rent</option>         
      <option value="own">Own</option>
 							</select>
@@ -111,26 +155,26 @@
                         <p class="applicationLine">
 						<span class="w255 m-r-15">
 							<label>Street Address</label>
-							<input type="text" class="w-244" maxlength=60 id="address" name="address" chkTitle="Address"  chkRequired=true />
+							<input type="text" class="w-244" maxlength=60 id="address" name="address" chkTitle="Address"  chkRequired=true tabindex ="5"/>
 						</span>
 					
 						<span class="w105 m-r-15">
 							<label>ZIP Code</label>
-							<input name="zip" type='text' id="zip"  maxlength=5 chkTitle="Zip"  chkRequired=true next="months_at_residence" />
+							<input name="zip" type='text' id="zip"  maxlength=5 chkTitle="Zip"  chkRequired=true next="HomePhone1" tabindex ="6"/>
 						</span>
                         
                         <span class="w46 m-r-15">
 							<label>Home Phone</label>
-							<input class="w-46 m-r-5" type="text" onChange="update_home_phone();" name="HomePhone1"  maxlength="3" id="HomePhone1" value=""   chkTitle="Home Phone (Part 1)" chkRequired="true" chkReqLength="3" chkType="num" next="HomePhone2" />  
-					<input class="w-46 m-r-5" type="text" onChange="update_home_phone();" name="HomePhone2"   maxlength="3" id="HomePhone2" value=""   chkTitle="Home Phone (Part 2)" chkRequired="true" chkReqLength="3" chkType="num" next="HomePhone3" />  
-					<input class="w-46" type="text" onChange="update_home_phone();" name="HomePhone3"  maxlength="4" value="" id="HomePhone3"   chkTitle="Home Phone (Part 3)" chkRequired="true" chkReqLength="4" chkType="num" next="address" />
+							<input class="w-46 m-r-5" type="text" onChange="update_home_phone();" name="HomePhone1"  maxlength="3" id="HomePhone1" value=""   chkTitle="Home Phone (Part 1)" chkRequired="true" chkReqLength="3" chkType="num" next="HomePhone2" tabindex ="7"/>  
+					<input class="w-46 m-r-5" type="text" onChange="update_home_phone();" name="HomePhone2"   maxlength="3" id="HomePhone2" value=""   chkTitle="Home Phone (Part 2)" chkRequired="true" chkReqLength="3" chkType="num" next="HomePhone3" tabindex ="8"/>  
+					<input class="w-46" type="text" onChange="update_home_phone();" name="HomePhone3"  maxlength="4" value="" id="HomePhone3"   chkTitle="Home Phone (Part 3)" chkRequired="true" chkReqLength="4" chkType="num" next="months_at_residence" tabindex ="9"/>
 					<input name="home_phone" type="hidden" id="home_phone" />
  
 						</span>
                         
                         <span class="w115">
 							<label>Time at Address</label>
-							<select class="w-115" name="months_at_residence" id="months_at_residence">
+							<select class="w-115" name="months_at_residence" id="months_at_residence" tabindex ="10">
       <option value="12">1 Year or less</option>
       <option value="24">2 Years</option>
       <option value="36">3 Years</option>
@@ -148,7 +192,7 @@
 					
                     <span class="w46 m-r-15">
 							<label>Date of Birth</label>
-							<select class="w-56 m-r-5" onChange="update_birth_date();" name="BirthMonth" id="BirthMonth" chkRequired="true" chkMinLength="1" chkType="num" chkTitle="Birthday Month">
+							<select class="w-56 m-r-5" onChange="update_birth_date();" name="BirthMonth" id="BirthMonth" chkRequired="true" chkMinLength="1" chkType="num" chkTitle="Birthday Month" tabindex ="11">
                             <option value="">MM</option>
 								<option value="1">Jan</option>
       <option value="2">Feb</option>
@@ -163,7 +207,7 @@
       <option value="11">Nov</option>
       <option value="12">Dec</option>
 							</select>
-							<select class="w-56 m-r-5" onChange="update_birth_date();" name="BirthDay" id="BirthDay" chkRequired="true" chkMinLength="1" chkType="num" chkTitle="Birthday Day">
+							<select class="w-56 m-r-5" onChange="update_birth_date();" name="BirthDay" id="BirthDay" chkRequired="true" chkMinLength="1" chkType="num" chkTitle="Birthday Day" tabindex ="12">
                             <option value="">DD</option>
 								<option value="1">01</option>
       <option value="2">02</option>
@@ -197,7 +241,7 @@
       <option value="30">30</option>
       <option value="31">31</option>
 							</select>
-							<select class="w-56"; padding-left: 1px; onChange="update_birth_date();" name="BirthYear" id="BirthYear" chkRequired="true" chkMinLength="1" chkType="num" chkTitle="Birthday Year">
+							<select class="w-56"; padding-left: 1px; onChange="update_birth_date();" name="BirthYear" id="BirthYear" chkRequired="true" chkMinLength="1" chkType="num" chkTitle="Birthday Year" tabindex ="13">
                             <option value="">YYYY</option>
 	<option value="1994">1994</option>
     <option value="1993">1993</option>
@@ -287,19 +331,19 @@
 						</span>
 						<span class="w46 m-r-15">
 							<label>SSN: (e.g. 123456789)</label>
-							<input type="text" class="w-46 m-r-5" maxlength="3" onChange="update_ssn();" name="ssn1"  id="ssn1" value=""   chkTitle="Social Security Number (Part 1)" chkRequired="true" chkReqLength="3" chkType="num" next="ssn2" />
-							<input type="text" class="w-46 m-r-5" maxlength="2" onChange="update_ssn();" name="ssn2" id="ssn2" value=""   chkTitle="Social Security Number (Part 2)" chkRequired="true" chkReqLength="2" chkType="num" next="ssn3" />
-							<input type="text" class="w-46" onChange="update_ssn();" name="ssn3"  maxlength="4" value="" id="ssn3"   chkTitle="Social Security Number (Part 3)" chkRequired="true" chkReqLength="4" chkType="num" next="income_type" tabindex="16"/>
+							<input type="text" class="w-46 m-r-5" maxlength="3" onChange="update_ssn();" name="ssn1"  id="ssn1" value=""   chkTitle="Social Security Number (Part 1)" chkRequired="true" chkReqLength="3" chkType="num" next="ssn2" tabindex ="14"/>
+							<input type="text" class="w-46 m-r-5" maxlength="2" onChange="update_ssn();" name="ssn2" id="ssn2" value=""   chkTitle="Social Security Number (Part 2)" chkRequired="true" chkReqLength="2" chkType="num" next="ssn3" tabindex ="14"/>
+							<input type="text" class="w-46" onChange="update_ssn();" name="ssn3"  maxlength="4" value="" id="ssn3"   chkTitle="Social Security Number (Part 3)" chkRequired="true" chkReqLength="4" chkType="num" next="driving_license_number" tabindex="16"/>
                             <input name="social_security_number" type="hidden" id="social_security_number" />
 						</span>
                         
                         <span class="w180 m-r-15">
 							<label>Driver's Licence / State ID #</label>
-							<input name="driving_license_number" value=""  id="driving_license_number" type="text" chkTitle="Driver's License Number" chkRequired="true" chkMinLength="5" tabindex="17"/>
+							<input name="driving_license_number" value=""  id="driving_license_number" type="text" chkTitle="Driver's License Number" chkRequired="true" chkMinLength="5" next="driving_license_state" tabindex="17"/>
 						</span>
 						<span class="w115">
 							<label>Issuing State</label>
-								<select class="w-115" id="driving_license_state" name="driving_license_state">
+								<select class="w-115" id="driving_license_state" name="driving_license_state" tabindex = "18">
       <option value="AL">Alabama</option>
       <option value="AK">Alaska</option>
       <option value="AZ">Arizona</option>
@@ -360,7 +404,7 @@
 					<p class="applicationLine">	
 						<span class="w180 m-r-15">
 							<label>Montly Income</label>
-							<select class="w-180" id="monthly_income" name="monthly_income">
+							<select class="w-180" id="monthly_income" name="monthly_income" tabindex = "19">
 								<option value="750">Less than &#36;750</option>
 						<option value="1000">&#36;751-&#36;1000</option>
 						<option value="1250">&#36;1001-&#36;1250</option>
@@ -389,7 +433,7 @@
                         
                         <span class="w115 m-r-15">
 							<label>Income source</label>
-							<select class="w-115" id="income_type" name="income_type">
+							<select class="w-115" id="income_type" name="income_type" tabindex = "20">
 								<option value="employment" selected="selected">Employment</option>
       <option value="benefits">Benefits</option>
 							</select>
@@ -397,7 +441,7 @@
                         
                         <span class="w115 m-r-15">
 							<label>Pay Period</label>
-							<select class="w-115"  name="pay_period">
+							<select class="w-115"  name="pay_period" tabindex = "21">
 								<option value="weekly">Weekly</option>
 						<option value="biweekly" selected="selected">Bi-Weekly</option>
 						<option value="twice_monthly">Twice Monthly</option>
@@ -406,7 +450,7 @@
 						</span>
 						<span class="w215 m-r-15">
                     <label>Next Payday</label>
-                    <select  size="1" name="pd1m" id="pd1m" onchange="update_next_pay_date();" class="w-56 m-r-5">
+                    <select  size="1" name="pd1m" id="pd1m" onchange="update_next_pay_date();" class="w-56 m-r-5" tabindex = "22">
                       <option value="1">Jan</option>
                       <option value="2">Feb</option>
                       <option value="3">Mar</option>
@@ -420,7 +464,7 @@
                       <option value="11">Nov</option>
                       <option value="12">Dec</option>
                     </select>
-                    <select  size="1" name="pd1d" id="pd1d" onchange="update_next_pay_date();" class="w-56 m-r-5">
+                    <select  size="1" name="pd1d" id="pd1d" onchange="update_next_pay_date();" class="w-56 m-r-5" tabindex = "23">
                       <option value="01">1</option>
                       <option value="02">2</option>
                       <option value="03">3</option>
@@ -468,14 +512,14 @@
                   
 						<span class="w255 m-r-15">
 							<label>Name of Employer/Company</label>
-							<input type="text" name="employer" value="" maxlength="25" id="employer" chkTitle="employer Name" chkRequired="true" chkMinLength="4" />
+							<input type="text" name="employer" value="" maxlength="25" id="employer" chkTitle="employer Name" chkRequired="true" chkMinLength="4" tabindex = "23"/>
 						</span>
                         
                         <span class="w46 m-r-15">
 							<label>Work Phone</label>
-							<input type="text" class="w-46 m-r-5" onChange="update_work_phone();"  maxlength="3" name="EmployerPhone1" id="EmployerPhone1"   chkTitle="Work Phone (Part 1)" chkRequired="true" chkReqLength="3" chkType="num" next="EmployerPhone2"   value="" />
-							<input type="text" class="w-46 m-r-5" onChange="update_work_phone();"  maxlength="3" name="EmployerPhone2" id="EmployerPhone2"   chkTitle="Work Phone (Part 2)" chkRequired="true" chkReqLength="3" chkType="num" next="EmployerPhone3"  value="" />
-							<input type="text" class="w-46" onChange="update_work_phone();"  maxlength="4" name="EmployerPhone3" id="EmployerPhone3"   chkTitle="Work Phone (Part 3)" chkRequired="true" chkReqLength="4" chkType="num" value="" next="pay_period" />
+							<input type="text" class="w-46 m-r-5" onChange="update_work_phone();"  maxlength="3" name="EmployerPhone1" id="EmployerPhone1"   chkTitle="Work Phone (Part 1)" chkRequired="true" chkReqLength="3" chkType="num" next="EmployerPhone2"   value="" tabindex = "24"/>
+							<input type="text" class="w-46 m-r-5" onChange="update_work_phone();"  maxlength="3" name="EmployerPhone2" id="EmployerPhone2"   chkTitle="Work Phone (Part 2)" chkRequired="true" chkReqLength="3" chkType="num" next="EmployerPhone3"  value="" tabindex = "25"/>
+							<input type="text" class="w-46" onChange="update_work_phone();"  maxlength="4" name="EmployerPhone3" id="EmployerPhone3"   chkTitle="Work Phone (Part 3)" chkRequired="true" chkReqLength="4" chkType="num" value="" next="active_military2" tabindex = "26"/>
                             <input name="work_phone" type="hidden" id="work_phone" />
 						</span>
 						
@@ -483,7 +527,7 @@
                         <label>U.S. Military</label> 
 						<input type="radio"  id="active_military1" name="active_military" value="true" />
 						<span class="radio-label">YES</span>
-						<input type="radio" id="active_military2" name="active_military" value="false" checked="checked" />
+						<input type="radio" id="active_military2" name="active_military" value="false" checked="checked" tabindex = "27" />
 						<span class="radio-label">NO</span>
 						<span class="text-wrap">Active Duty, Active Duty Spouse or Dependent</span>
 						</span>
@@ -497,17 +541,17 @@
                     
 						<span class="w310 m-r-15">
 							<label>Name of Bank</label>
-							<input name="bank_name" value="" id="bank_name"  type="text" chkTitle="Bank Name" chkRequired="true" chkMinLength="2" />
+							<input name="bank_name" value="" id="bank_name"  type="text" chkTitle="Bank Name" chkRequired="true" chkMinLength="2" tabindex = "28"/>
 						</span>
                         
                         <span class="w180 m-r-15 w-180">
 							<label>Routing Number:<span class="tip"><a href="#" onclick="window.open('check.html','', 'height=560, width=600'); return false;">?</a></span></label>
-							<input name="routing_number" id="routing_number"  maxlength="9" value=""  chkTitle="Bank Routing Number" chkRequired="true" chkMinLength="9" chkType="num" type="text" next="account_number" />
+							<input name="routing_number" id="routing_number"  maxlength="9" value=""  chkTitle="Bank Routing Number" chkRequired="true" chkMinLength="9" chkType="num" type="text" next="account_number" tabindex = "29" />
                             </span>
                             
                             <span class="w180">
 							<label>Months With Bank</label>
-							<select class="w-180" name="months_with_bank" id="months_with_bank">
+							<select class="w-180" name="months_with_bank" id="months_with_bank" tabindex = "30">
       <option value="12">1 Year or less</option>
       <option value="24">2 Years</option>
       <option value="36">3 Years</option>
@@ -526,14 +570,14 @@
                         
 						<span class="w147 m-r-15">
 							<label>Bank Account Type</label>
-							<select id="account_type" name="account_type" class="w-147">
+							<select id="account_type" name="account_type" class="w-147" tabindex = "31">
       <option value="checking" selected="selected">Checking Account</option>
       <option value="saving">Savings Account</option>
     </select>
 						</span>
 						<span class="w147 m-r-15">
 							<label>Direct Deposit</label>
-							<select name="direct_deposit" class="w-147">
+							<select name="direct_deposit" class="w-147" tabindex = "32">
 						<option value="true">Direct Deposit</option>
 						<option value="false">Paper Check</option>
 					</select>
@@ -541,12 +585,12 @@
 					
 						<span class="w180 m-r-15">
 							<label>Account Number:<span class="tip"><a href="#" onclick="window.open('check.html','', 'height=560, width=600'); return false;">?</a></span></label>
-							<input name="account_number" value="" id="account_number"  type="text" chkTitle="Account Number" chkType="num" chkRequired="true" chkMinLength="4" />
+							<input name="account_number" value="" id="account_number"  type="text" chkTitle="Account Number" chkType="num" chkRequired="true" chkMinLength="4" tabindex = "33"/>
 						</span>
                         
                         <span class="w180">
 							<label>Requested Loan Amount</label>
-								<select class="w-180" id="requested_loan_amount" name="requested_loan_amount">
+								<select class="w-180" id="requested_loan_amount" name="requested_loan_amount" tabindex = "34">
       <option value="100">$100</option>
 <option value="200">$200</option>
 <option value="300" selected="selected">$300</option>
@@ -565,7 +609,7 @@
 			</fieldset>
 		</form>
         
-<p class="msDisclaimer">The Payday Hound is NOT A LENDER. We are a free, no obligation financial marketing service, matching prospective borrowers with prospective lenders for short-term loans. We are not a financial institution or a lender and cannot guarantee final approval of your loan. Not all independent loan companies will approve a loan up to $1,000. Qualifying for final approval of a cash loan depends on many factors including, but not limited to income levels, the state in which you reside and employment status. The independent loan companies may verify your supplied information with any number of independent verification companies including but not limited to: CLVerify, Teletrack, or Accurint. By entering your SSN into the website, you consent to allow us to share your SSN with outside service providers for evaluation of your application and provision of loan services. By clicking the submit button you certify that you are at least 18 years old, a legal resident of the United States and agree to the privacy policy. Residents of Georgia, Virginia, West Virginia, Arizona, Pennsylvania, and Ohio are not eligible to apply for a cash advance on this web site.</p>		
+<p class="msDisclaimer">The Payday Hound is NOT A LENDER. We are a free, no obligation financial marketing service, matching prospective borrowers with prospective lenders for short-term loans. We are not a financial institution or a lender and cannot guarantee final approval of your loan. Not all independent loan companies will approve a loan up to $1,000. Qualifying for final approval of a cash loan depends on many factors including, but not limited to income levels, the state in which you reside and employment status. The independent loan companies may verify your supplied information with any number of independent verification companies including but not limited to: CLVerify, Teletrack, or Accurint. By entering your SSN into the website, you consent to allow us to share your SSN with outside service providers for evaluation of your application and provision of loan services. By clicking the submit button you certify that you are at least 18 years old, a legal resident of the United States and agree to the privacy policy. Residents of Georgia, Virginia, West Virginia, Arizona, Pennsylvania, and Ohio are not eligible to apply for a cash advance or other loan product using the above application or this matching service.</p>		
 	
     <div class="footer" style="margin:0 auto;">
     <div id="plsWait" style="position: relative;margin-top:-147px;display: none;">
@@ -598,12 +642,12 @@
 
 <footer>		
 	<ul>
-	<li><a href="http://www.thepaydayhound.com/about-the-payday-hound/">About Us</a> | </li>
-	<li><a href="http://www.thepaydayhound.com/contact-the-payday-hound/" target="_blank">Contact Us</a> | </li>
-	<li><a href="http://www.thepaydayhound.com/jobs/">Jobs</a> | </li>
-	<li><a href="http://www.thepaydayhound.com/press/">Press</a> | </li>    			    
-	<li><a href="http://www.thepaydayhound.com/privacy-policy/">Privacy Policy</a> | </li>    
-	<li><a href="http://www.thepaydayhound.com/terms-of-use/">Terms of Use</a></li> 	    
+	<li><a href="http://tools.thepaydayhound.com/infos/about">About Us</a> | </li>
+	<li><a href="http://tools.thepaydayhound.com/infos/contact" target="_blank">Contact Us</a> | </li>
+	<li><a href="http://tools.thepaydayhound.com/infos/jobs">Jobs</a> | </li>
+	<li><a href="http://tools.thepaydayhound.com/infos/press">Press</a> | </li>    			    
+	<li><a href="http://tools.thepaydayhound.com/infos/privacy">Privacy Policy</a> | </li>    
+	<li><a href="http://tools.thepaydayhound.com/infos/terms">Terms of Use</a></li> 	    
 	</ul>
 	
 	<div id="copyright">Copyright © 2012 The Payday Hound. All rights reserved.</div>
