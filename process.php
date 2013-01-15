@@ -252,6 +252,9 @@ if($lead_approved == 1)
 	//if approved read the contents of hte approved template (that you can edit to add any pixels of your choice.
 	//then redirect the customer to the lender page.
 	
+	mail('conway@thepaydayhound.com', 'Approved Lead from RoundSky PDH', $lead['social_security_number'] . ' and ' . $result_data['server_data']);
+	mail('conway@thepaydayhound.com', 'Approved Lead from RoundSky for PDH','Lead Approved. Tier: ' . $result_data['tier_id']);
+
 	$redirect_url = $result_data['redirect'];
 	include('approved.html');
 	exit;
@@ -266,7 +269,7 @@ else // lead not approved
 	//include('decline.html');
 	
 	//or do redirect via:
-	header('Location: http://www.hippocred.com/');
+	header('Location: http://www.mobilespinner.com/');
 }
 
 ?>
