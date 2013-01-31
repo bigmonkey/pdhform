@@ -1,0 +1,141 @@
+.lpBody{
+	background-color: #666666;
+}
+
+.lpHeader{
+	margin:0 auto;
+	padding: 0px 30px;
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #ddd;
+  width: 900px;
+}
+
+
+.lpHeader a, .lpHeader a:link, .lpHeader a:visited {
+   color: #444;
+}
+
+.lpHeader a:hover, .lpHeader a:active {
+   color: #fba117;
+}
+
+.lpHeaderTextBox{
+  font-size: 0.75em;
+	float: right;
+	margin-top: 28px;
+}
+
+#lpWrapper {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+#lpContainer {
+	margin:0 auto;
+	padding: 0px 30px;
+	width: 900px;
+	background-color: #ffffff;
+}
+
+/* Form */
+#lpForm{
+	width: 600px;
+	float: left;
+	font-size: 0.8em;
+}
+
+#lpForm h1{
+	font-size: 1.6em;
+	text-shadow: 0px 0px;
+}
+/* Form End */
+
+/*Content */
+	
+.lpContent {
+	width: 840px;
+	margin: 20px auto;
+	padding: 10px 20px;
+	font-size: 0.8em;
+	background: #eee;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border-radius: 7px 7px 7px 7px;
+}
+
+
+.lpContent h1 {
+	margin-top: 10px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #006633;
+}
+
+
+
+/*SIDEBAR*/
+
+#lpSidebar {
+    background-color: #fff;
+    width: 280px;
+    float: left;
+    margin: 15px 15px 30px 0px; 
+}
+
+.lpSidebarSeals img{
+	vertical-align: middle;
+}
+
+.lpSidebarSeals {
+	margin: 20px 0px;
+}
+#lpSidebarWhyPDH h2 {
+    color: #555;
+    font-size: 0.95em;
+    padding: 0px 0px 4px;
+		font-weight: bold;
+}
+
+
+
+.quote{
+	margin-top: 35px;
+	font-size: .9em;
+	font-style: italic;
+	font-weight: bold;
+}
+.quoteCite{
+	margin-top: 5px;
+	font-size: .9em;
+	font-style: none;
+	float: right;
+	margin-bottom: 10px;
+}
+
+.benefits{
+	margin-top: 25px;
+	margin-left: 10px;
+}
+.benefits ul li, .benefits ul li{
+	list-style-type: none;
+	padding: 6px 35px;
+	background: url('../img/lp/check-mark.png') no-repeat left;
+	font-size: 1em;
+	color: #006633;
+	font-weight: bold;
+	line-height: 1.8em
+}
+
+/*footer*/
+.lpFooter {
+	clear: both;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	font-size: 0.7em;
+	padding: 20px 0px;
+	height: 110px;
+	margin: 5 auto;
+	width: 900px;
+	}
+	
+

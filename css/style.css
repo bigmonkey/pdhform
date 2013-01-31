@@ -60,7 +60,7 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
-#clearboth {
+.clearboth {
     clear: both;
 }
 
