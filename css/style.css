@@ -26,14 +26,11 @@ body {
 }
 
 #wrapper {
-    width: 980px;
+    width: 900px;
     margin: 0 auto;
 }
 
 #container {
-	min-height: 100%;
-	height: 100%;
-	margin-top: -110px;
 }
 
 h1, h2 {
@@ -87,8 +84,7 @@ p {
 	-moz-box-shadow: 0 0 3px 1px #eee;
 	-webkit-box-shadow: 0 0 3px 1px#eee;
 	box-shadow: 0 0 4px 1px #eee;
-	border-top: 110px solid #eee;
-	}
+}
 
 #mainHeader {
 	height: 85px;
@@ -191,9 +187,9 @@ nav a:hover, nav a:active {
 
 #sidebar {
     background-color: #fff;
-    width: 175px;
+    width: 280px;
     float: left;
-    margin: 20px 15px 30px 0px; 
+    margin: 15px 15px 30px 0px; 
 }
 
 #sidebarWhyPDH h2 {
@@ -203,7 +199,7 @@ nav a:hover, nav a:active {
 	font-weight: bold;
 }
 
-#sidebar ul, #sidebar ul li ul {
+#sidebarWhyPDH ul, #sidebarWhyPDH ul li ul {
     background: #eee;
     vertical-align: middle;
     padding: 10px 10px;
@@ -218,7 +214,7 @@ nav a:hover, nav a:active {
 	margin-bottom: 5px;
 }
 
-#sidebar ul li {
+#sidebarWhyPDH ul li {
 	margin-bottom: 5px;
 	font-size: 1em;
     font-weight: none;
@@ -226,13 +222,14 @@ nav a:hover, nav a:active {
 }
 
 
-#sidebar a, #sidebar a:link, #sidebar a:visited {
+#sidebarWhyPDH a, #sidebarWhyPDH a:link, #sidebarWhyPDH a:visited {
    color: #444;
 }
 
-#sidebar a:hover, #sidebar a:active {
+#sidebarWhyPDH a:hover, #sidebarWhyPDH a:active {
    color: #fba117;
 }
+
 
 
 
@@ -274,419 +271,6 @@ nav a:hover, nav a:active {
 	    margin-left: 40px;
 	}
 	
-/*MatchingServicesBenefits*/
-	
-	.msBenefits {
-		margin: 10px 0px;	
-	}
-	
-	.msBenefitsLeft, .msBenefitsCenter, .msBenefitsRight {
-		color: #0E8B4D;
-		font-weight: bold;
-	}
-	
-	.msBenefitsLeft {
-		width: 240px;
-		margin: 0px 0px 0px 50px;
-		float: left;
-	}
-
-	.msBenefitsCenter {
-		width: 200px;
-		float: left;
-	}
-	
-	.msBenefitsRight {
-		width: 220px;
-		float: left;
-	}
-	
-/* FORM
------------------------------------------------------------------------------- */
-
-textarea{resize:none;overflow:auto;}
-
-option { padding: 0 0.4em; }
-
-
-/* HR
------------------------------------------------------------------------------- */
-hr, .hr {display: block; clear: both; background: #ccc; color: #ccc; width: 100%; height: 1px; border: none; }
-
-/* HELPERS
------------------------------------------------------------------------------- */
-.clear, 
-.clear-left, 
-.clear-right {clear: both; display: block; width: 100%; height: 0; overflow: hidden; line-height: 0; font-size: 0; }
-
-.clear-left 	{ clear: left; }
-.clear-right 	{ clear: right; }
-
-.debug {color: #c30000; padding: 10px 20px; border: 2px solid red; }
-
-.b1r 		    { border: 1px solid red; }
-.float-right 	{ float: right!important; }
-.float-left 	{ float: left; }
-.no-border 		{ border: 0 none!important; }
-.no-margin 		{ margin: 0 !important; }
-.no-padding-top { padding-top: 0 !important; }
-.no-background  { background: transparent none; }
-.hidden 		{ visibility:hidden; display: none; }
-
-.a-left{text-align:left !important;}
-.a-right{text-align:right !important;}
-.a-center{text-align:center !important;}
-
-.no-list-style, .no-list-style li{list-style:none !important; margin-left:0 !important;}
-.mr-20{margin-right:20px !important;}
-.no-bg{background:none!important;}
-.p-b-10{padding-bottom:10px;}
-.m-r-15{margin-right:15px;}
-
-
-/* ANTI Clickjacking Attacks
------------------------------------------------------------------------------- */
-
-iframe { filter: alpha(opacity=100) !important; /* for IE */
-    	 opacity: 1 !important; /* for conforming browsers */ }
-
-/* Styles
------------------------------------------------------------------------------- */		 
-.applicationLine {
-	margin-top: 5px;
-}
-
-#applicant h2 {
-	font-size: 1em;	
-	color: #e58d1f;
-	margin-top: 15px;
-}
-
-.applicationNameSubTitle {
-	padding: 2px;
-	font-weight: bold;
-}
-
-.applicationSubTitle {
-	border-top: 1px solid #bbb;
-	padding: 2px;
-	font-weight: bold;
-}
-
-.form-block{
-	position:relative;
-	overflow:hidden;
-	clear:both;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	border-radius:5px;
-	behavior:url(js/PIE.htc);
-	margin: 10px 0 6px 0;
-	padding: 0 15px 20px 15px;
-	background-color:#e1e3e8;
-	width: 700px;
-}
-
-span.calendar{
-	float:left;
-	display:block;
-	width:16px;
-	height:16px;
-	/*cursor:pointer;
-	background:transparent url('../img/calendar-bg.gif') no-repeat left top;*/
-}
-
-.form-block input[type="text"]{
-	background-color:#fff;
-	border:1px solid #b6b6b6;
-	float:left;
-	color:#4e4e4e;
-	font-size: 0.85em;
-	padding: 1px 4px;
-}
-
-.form-block select{
-	background-color: #fff;
-	border: 1px solid #b6b6b6;
-	float:left;
-	color:#4e4e4e;
-	font-size: 0.8em;
-	font: Helvetica, Arial, sans-serif
-	padding: 3px 1px 3px 5px;
-
-}
-
-.form-block input[type="radio"]{
-	float:left;
-	border:none;
-	background:none;
-}
-
-span.radio-label{
-	float:left;
-	font-size: 0.9em;
-	font-weight: bold;
-	margin-top:3px;
-}
-
-.form-block label{
-	display: block;
-	clear: both;
-	font-size: 0.9em;
-	font-weight: bold;
-	margin-bottom: 2px;
-}
-
-.form-block p span.w180{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:180px;
-}
-
-.form-block p span.w180 input[type="text"]{
-	width:169px;
-}
-
-.form-block p span.w147{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:147px;
-}
-
-.form-block p span.w165{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:165px;
-}
-
-.form-block p span.w105{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:105px;
-}
-
-.form-block p span.w105 input[type="text"]{
-	width:94px;
-}
-
-.form-block p span.w46{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:180px;
-}
-
-.form-block p span.w46 input[type="text"]{
-	width:46px;
-}
-
-.form-block p span.w255{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:255px;
-}
-
-.form-block p span.w255 input[type="text"]{
-	width:244px;
-}
-.form-block p span.w215{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:215px;
-}
-
-.form-block p span.w215 input[type="text"]{
-	width:205px;
-}
-
-.form-block p span.w115{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:115px;
-}
-
-.form-block p span.w115{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:115px;
-}
-
-.form-block p span.w300{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:300px;
-}
-
-.form-block p span.w170{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:170px;
-}
-
-.form-block p span.w275{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:275px;
-}
-
-.form-block p span.w275 input[type="text"]{
-	width:265px;
-}
-
-.form-block p span.w235{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:235px;
-}
-
-.form-block p span.w310{
-	display:block;
-    float:left;
-    overflow:hidden;
-    width:310px;
-}
-
-.form-block p span.w310 input[type="text"]{
-	width:299px;
-}
-
-.form-block p span.total{
-	float:left;
-	display:block;
-	overflow:hidden;
-}
-
-.form-block p{
-	position:relative;
-	overflow:hidden;
-	clear:both;
-	margin-bottom:0;
-}
-
-.w-56{width:56px;}
-
-.w-105{width:105px;}
-
-.w-115{width:115px;}
-
-.w-180{width:180px;}
-
-.w-147{width:147px;}
-
-.w-165{width:165px;}
-
-.w-166{width:166px;}
-
-.w-170{width:170px;}
-
-.w-226{width:226px;}
-
-.w-53{width:53px;}
-
-.form-block p span.w-253{width:253px;}
-
-.m-r-5{margin-right:5px;}
-
-.w-250{width:250px;}
-
-span.text-wrap{
-	float:left;
-	font-size: 0.7em;
-	padding-left:10px;
-	width: 140px;
-	line-height: 12px;
-}
-
-.form-block p span.quarter input[type="text"].w-128{width:129px;border-right:none;}	
-
-span.tip{
-	color:#ec9416;
-	font-size: 1.0em;
-	font-weight: bold;
-	margin-left:5px;
-	cursor:pointer;
-}
-
-.confirm-block{
-	margin: 0px;
-	padding: 0px;
-	position:relative;
-	overflow:hidden;
-	clear:both;
-	width: 725px;	
-}
-
-.confirm-block p{
-	font-size: 1em Arial,'Helvetica Neue',Helvetica,sans-serif;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.myButton input {
-	background:url(../img/submit-button.png) no-repeat;
-	cursor:pointer;
-    display: block;
-    height: 40px;
-    width: 675px;
-	margin: 0 auto;
-	border: none;
-	font-size: 0px;
-
-}
-
-.myButton input:hover{
-	background-position: 0 -40px;
-}
-
-.msDisclaimer {
-	font-size: 0.8em;
-	line-height: 12px;
-	font-style: italic;
-	color: #707070;
-	width: 725px;
-	}
-
-
-/*----------------------------------------------------*/
-
-
-.form-block p span.w244 input[type="text"].w-244{width:244px;}
-
-.form-block p span.w275 input[type="text"].w-275{width:275px;}
-
-.form-block p span.w105 input[type="text"].w-105{width:105px;}
-
-.form-block p span.w46 input[type="text"].w-46{width:46px;}
-
-.form-block p span.w165 input[type="text"].w-40{width:40px;}
-
-.form-block p span.quarter input[type="text"].w-59{width:59px;}
-
-.form-block p span.quarter input[type="text"].w-55{width:41px;}
-
-.form-block p span.quarter input[type="text"].w-45{width:31px;}
-
-.form-block p span.quarter input[type="text"].w-65{width:51px;}
-
-.form-block p span.quarter input[type="text"].w-w55{width:36px;}
-
-.form-block p span.quarter input[type="text"].w-w45{width:36px;}
-
-.form-block p span.quarter input[type="text"].w-w65{width:51px;}
-
-#form-wrap.without-title{padding:10px 7px;}
 
 /*footer*/
 footer {
