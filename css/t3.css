@@ -1,13 +1,11 @@
 .lpBody{
-	background-color: #666666;
+	background-color: #fff;
 }
 
 .lpHeader{
-	margin:0 auto;
-	padding: 0px 30px;
   background-color: #EEEEEE;
   border-bottom: 1px solid #ddd;
-  width: 900px;
+
 }
 
 
@@ -19,10 +17,10 @@
    color: #fba117;
 }
 
-.lpHeaderTextBox{
-  font-size: 0.75em;
-	float: right;
-	margin-top: 28px;
+.lpHeaderBox{
+	margin:0 auto;
+	padding: 0px 30px;
+	width: 900px;
 }
 
 #lpWrapper {
