@@ -122,10 +122,13 @@ nav a:hover, nav a:active {
     color: #E58D1F;
     text-decoration: none;
 }
+
+
 .chromestyle {
     font-weight: bold;
     width: 99%;
 }
+
 .chromestyle:after {
     clear: both;
     content: ".";
